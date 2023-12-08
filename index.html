@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Color scheme generator</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- color picker -->
+      <form class="form" action="">
+        <input type="color" />
+        <select>
+          <!-- color scheme selection -->
+          <option value="analogic">Analogic</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="monochrome-dark">Monochrome-light</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="squad">squad</option>
+        </select>
+
+        <!-- get color scheme button -->
+        <button>Get color scheme</button>
+      </form>
+
+      <!-- div to display the colors gotten -->
+      <div class="colors">
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+        <div class="color5"></div>
+      </div>
+
+      <!-- hex code from the color gotten -->
+      <div class="colors-codes">
+        <p>#A626D3</p>
+        <p>#A626D3</p>
+        <p>#A626D3</p>
+        <p>#A626D3</p>
+        <p>#A626D3</p>
+      </div>
+    </main>
+  </body>
+</html>
