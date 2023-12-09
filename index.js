@@ -16,6 +16,8 @@ form.addEventListener("submit", (e) => {
 function generateColorScheme() {
   const colorSelected = colorPicker.value;
   const modeSelected = selectMode.value;
+
+  // encodeURIComponent ensures that the values are propeprly encoded which makes the URL safe and correctly formatted for an API request
   const encodedColor = encodeURIComponent(colorSelected);
   const encodedMode = encodeURIComponent(modeSelected);
 
