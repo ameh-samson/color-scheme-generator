@@ -35,6 +35,8 @@ function generateColorScheme() {
 
 function renderColorScheme(data) {
   colorsDivContainer.innerHTML = "";
+
+  // loops through the colors
   data.colors.forEach((color) => {
     colorsDivContainer.innerHTML += `
       <div class="colors-div" style="background-color: ${color.hex.value};"></div>
@@ -45,6 +47,8 @@ function renderColorScheme(data) {
 // renders the hex code to the DOM
 function renderHexCode(data) {
   hexCodesContainer.innerHTML = "";
+
+  // loops through the hex values
   data.colors.forEach((color) => {
     hexCodesContainer.innerHTML += `
       <P>${color.hex.value}</P>
