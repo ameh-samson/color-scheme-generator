@@ -47,7 +47,7 @@ p {
 .main,
 .form,
 select,
-.colors-codes {
+.hex-codes-container {
   box-shadow: 0 4px 11px hsla(0, 0%, 0%, 0.15);
 }
 
@@ -93,7 +93,7 @@ button:hover {
 /* colors style */
 
 .colors-div-container,
-.colors-codes {
+.hex-codes-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -104,7 +104,7 @@ button:hover {
   cursor: pointer;
 }
 
-.colors-codes {
+.hex-codes-container {
   text-align: center;
   padding: 11px 0;
   color: hsla(255, 5%, 84%, 1);
@@ -113,24 +113,4 @@ button:hover {
 
 .colors-codes p {
   cursor: pointer;
-}
-
-.color1 {
-  background: hsla(0, 89%, 66%, 1);
-}
-
-.color2 {
-  background: hsla(250, 18%, 19%, 1);
-}
-
-.color3 {
-  background: hsla(54, 91%, 83%, 1);
-}
-
-.color4 {
-  background: hsla(139, 30%, 74%, 1);
-}
-
-.color5 {
-  background: hsla(284, 69%, 49%, 1);
 }
