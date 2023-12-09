@@ -20,9 +20,9 @@
   <body>
     <main class="main">
       <!-- color picker -->
-      <form class="form" action="">
-        <input type="color" />
-        <select>
+      <form id="generateBtn" class="form" action="">
+        <input id="color-picker" type="color" value="#ff5733" />
+        <select id="select-mode">
           <!-- color scheme selection -->
           <option value="analogic">Analogic</option>
           <option value="monochrome">Monochrome</option>
@@ -35,16 +35,16 @@
         </select>
 
         <!-- get color scheme button -->
-        <button>Get color scheme</button>
+        <button type="submit">Get color scheme</button>
       </form>
 
       <!-- div to display the colors gotten -->
-      <div class="colors">
-        <div class="color1"></div>
+      <div class="colors-div-container">
+        <!-- <div class="color1"></div>
         <div class="color2"></div>
         <div class="color3"></div>
         <div class="color4"></div>
-        <div class="color5"></div>
+        <div class="color5"></div> -->
       </div>
 
       <!-- hex code from the color gotten -->

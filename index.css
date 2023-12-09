@@ -92,13 +92,13 @@ button:hover {
 
 /* colors style */
 
-.colors,
+.colors-div-container,
 .colors-codes {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.colors {
+.colors-div-container {
   color: red;
   height: 370px;
   cursor: pointer;
