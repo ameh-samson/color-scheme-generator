@@ -71,10 +71,6 @@ select {
   padding: 10px;
 }
 
-select.active {
-  font-weight: 600;
-}
-
 button {
   color: hsla(0, 0%, 100%, 1);
   background: hsla(216, 22%, 31%, 1);
@@ -99,7 +95,6 @@ button:hover {
 }
 
 .colors-div-container {
-  color: red;
   height: 370px;
   cursor: pointer;
 }
