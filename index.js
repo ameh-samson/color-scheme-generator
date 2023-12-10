@@ -29,29 +29,23 @@ function generateColorScheme() {
     .then((res) => res.json())
     .then((data) => {
       renderColorScheme(data); // calls the function that renders the color to the DOM with the the data return passed into it
-      renderHexCode(data); // calls the function that renders the hexCode of the color to the DOM
     });
 }
 
+// renders the colorScheme to the DOM
 function renderColorScheme(data) {
   colorsDivContainer.innerHTML = "";
+  hexCodesContainer.innerHTML = "";
 
   // loops through the colors
   data.colors.forEach((color) => {
     colorsDivContainer.innerHTML += `
       <div class="colors-div" style="background-color: ${color.hex.value};"></div>
       `;
-  });
-}
 
-// renders the hex code to the DOM
-function renderHexCode(data) {
-  hexCodesContainer.innerHTML = "";
-
-  // loops through the hex values
-  data.colors.forEach((color) => {
+    // renders the hex code to the DOM
     hexCodesContainer.innerHTML += `
-      <P>${color.hex.value}</P>
-    `;
+    <P>${color.hex.value}</P>
+  `;
   });
 }
